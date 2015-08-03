@@ -1,8 +1,7 @@
 require 'sinatra'
 require 'shotgun'
   get '/' do
-    'hello!'
-  end
-  get '/secret' do
-    'prete parrot'
-  end
+    "<div>
+    <img src='http://bit.ly/1eze8aE'>
+   </div>"
+ end
