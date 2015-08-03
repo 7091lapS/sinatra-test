@@ -1,11 +1,16 @@
 
   <div style='border: 3px solid yellow'>
     <% if @visitor %>!
-    Hello, <%= @visitor %>!
-    <% end %>
-    <% if @name %>
-      My name is <%= name %>
-    My name is <%= @name %>
+      Hello, <%= @visitor %>!
+    <% else %>
+      <form action="/hello">    #the action attribute determines which link
+                            the form returns us to when we submit. Buttons
+                            dont have any data in so they wont get sent back to server
+        My name is <%= @name %>.
+        What's your name?
+        <input type="text" name="name">
+        <input type="submit" value="Submit">
+      </form>
     <% end %>
     <img src='http://bit.ly/1eze8aE'>
    </div>
