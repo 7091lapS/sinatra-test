@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'shotgun'
   get '/' do
     'hello!'
   end
   get '/secret' do
-    'this is a secret page'
+    'prete parrot'
   end
